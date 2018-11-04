@@ -54,8 +54,9 @@ def viewdata(datamat, datalabel):
     #ax.scatter(datamat[:,1], datamat[:,2], 15.0*np.array(datalabel), 15.0*np.array(datalabel))
     plt.xlabel('Percentage of Time Spent Playing Video Games')
     plt.ylabel('Liters of Ice Cream Consumed Per Week')
-    plt.show()
     plt.savefig("dateplot.jpg")
+    plt.show()
+   
 
 def autonorm(datamat):
     maxinmun = datamat.max(axis = 0)
